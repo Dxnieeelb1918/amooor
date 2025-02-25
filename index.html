@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>                                    
+<body>
+    <div class="container" id="inicio">
+        <h2>Hola Fer, o más bien amor ❤️</h2>
+        <p>Desde que te volví a buscar, me dijiste que no te había pedido que formalicemos lo nuestro nuevamente
+        pero quería que fuera algo especial, algo que recordaras por mucho tiempo.
+        y como el loco enamorado que tienes es un Ing. quería pedírtelo a mi manera. 😘</p>
+        <button onclick="mostrarPreguntas()">Continuar</button>
+    </div>
+
+    <div class="container hidden" id="preguntas">
+        <h2>Responde las siguientes preguntas con sinceridad: </h2>
+        <form id="formulario">
+            <p>¿Te gusta estar conmigo?</p>
+            <input type="radio" name="p1" value="si"> Sí
+            <input type="radio" name="p1" value="no"> No
+
+            <p>¿Por nada ni nadie nos separaremos?</p>
+            <input type="radio" name="p2" value="si"> Sí
+            <input type="radio" name="p2" value="no"> No
+
+            <p>¿Soy el amor de tu vida?</p>
+            <input type="radio" name="p3" value="si"> Sí
+            <input type="radio" name="p3" value="no"> No
+
+            <p>¿Te sientes comoda conmigo?</p>
+            <input type="radio" name="p4" value="si"> Sí
+            <input type="radio" name="p4" value="no"> No
+
+            <p>¿Te sigo gustando como la primera vez?</p>
+            <input type="radio" name="p5" value="si"> Sí
+            <input type="radio" name="p5" value="no"> No
+        </form>
+        <button onclick="validarRespuestas()">Enviar</button>
+    </div>
+
+    <div class="container hidden" id="mensajeFinal">
+        <h2>Gracias por tus respuestas, pasemos a la siguinete y la mejor: </h2>
+        <h2>❤️ ¿Quieres ser mi novia? ❤️</h2>
+        <button onclick="mostrarCorazones()">Sí</button>
+    </div>
+
+    <div id="corazones"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
